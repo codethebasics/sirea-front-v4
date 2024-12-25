@@ -21,15 +21,15 @@ const MyPreset = definePreset(Aura, {
       700: '{sky.700}',
       800: '{sky.800}',
       900: '{sky.900}',
-      950: '{sky.950}'
-    }
-  }
+      950: '{sky.950}',
+    },
+  },
 });
 
 export const appConfig: ApplicationConfig = {
   providers: [
     provideZoneChangeDetection({
-      eventCoalescing: true
+      eventCoalescing: true,
     }),
     provideRouter(routes),
     provideClientHydration(),
@@ -38,9 +38,9 @@ export const appConfig: ApplicationConfig = {
       theme: {
         preset: MyPreset,
         options: {
-          darkModeSelector: '.my-app-dark'
-        }
-      }
-    })
-  ]
+          darkModeSelector: '.my-app-dark',
+        },
+      },
+    }),
+  ],
 };
