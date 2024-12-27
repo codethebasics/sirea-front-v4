@@ -17,6 +17,8 @@
   aside {
     grid-area: aside;
     overflow-y: auto;
+    scrollbar-color: #e2e8f0 transparent;
+    scrollbar-width: thin;
   }
 
   main {
@@ -27,6 +29,7 @@
     padding: 1rem;
 
     .container {
+      height: 100%;
       overflow-y: auto;
       padding: 1rem;
       scrollbar-color: #e2e8f0 transparent;
