@@ -1,0 +1,41 @@
+#app-container {
+  background-color: #f8fafc;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    'header header header'
+    'aside main main'
+    'footer footer footer';
+
+  header {
+    grid-area: header;
+    border-bottom: 1px solid #ddd;
+  }
+
+  aside {
+    grid-area: aside;
+    overflow-y: auto;
+  }
+
+  main {
+    grid-area: main;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+
+    .container {
+      overflow-y: auto;
+      padding: 1rem;
+      scrollbar-color: #e2e8f0 transparent;
+      scrollbar-width: thin;
+    }
+  }
+
+  footer {
+    grid-area: footer;
+    border-top: 1px solid #ddd;
+  }
+}

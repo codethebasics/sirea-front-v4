@@ -1,0 +1,33 @@
+img[src="logo-sirea.svg"] {
+  height: auto;
+  width: 150px;
+}
+
+.header-container {
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  :first-child, :last-child {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+}
+
+.profile {
+  padding: 0.3rem 0.5rem;
+  border-radius: 7px;
+  background-color: #f3f7fa;
+  color: #777;
+}
+
+.version-badge {
+  background-color: #0ea5e9;
+  color: #fff;
+  border-radius: 5px;
+  padding: 0.15rem 0.5rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
