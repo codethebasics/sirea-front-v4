@@ -2,9 +2,11 @@
   <p-table
     [value]="customers"
     [paginator]="true"
+    [scrollable]="true"
     [rows]="5"
     [tableStyle]="{ 'min-width': '50rem' }"
     [rowsPerPageOptions]="[5, 10, 20]"
+    scrollHeight="400px"
   >
     <ng-template #header>
       <tr>
