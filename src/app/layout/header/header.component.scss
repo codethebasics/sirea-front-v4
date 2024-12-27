@@ -1,4 +1,4 @@
-img[src="logo-sirea.svg"] {
+img[src='logo-sirea.svg'] {
   height: auto;
   width: 150px;
 }
@@ -9,7 +9,8 @@ img[src="logo-sirea.svg"] {
   justify-content: space-between;
   align-items: center;
 
-  :first-child, :last-child {
+  :first-child,
+  :last-child {
     display: flex;
     align-items: center;
     gap: 1.5rem;
@@ -17,10 +18,11 @@ img[src="logo-sirea.svg"] {
 }
 
 .profile {
+  font-size: 0.95rem;
   padding: 0.3rem 0.5rem;
-  border-radius: 7px;
-  background-color: #f3f7fa;
-  color: #777;
+  border-radius: 3px;
+  color: #0ea5e9;
+  border: 1px solid #0ea5e9;
 }
 
 .version-badge {
@@ -30,4 +32,96 @@ img[src="logo-sirea.svg"] {
   padding: 0.15rem 0.5rem;
   font-weight: 500;
   font-size: 1.2rem;
+}
+
+.avatar {
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.user-sidemenu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  width: 275px;
+  height: 100vh;
+  border-left: 1px solid #e2e8f0;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  z-index: 1000;
+
+  .fechar {
+    display: flex;
+    padding: 0.5rem;
+    justify-content: flex-end;
+    color: #888;
+
+    &:hover {
+      color: #444;
+      cursor: pointer;
+    }
+  }
+
+  .top,
+  .middle,
+  .bottom {
+    padding: 1rem;
+  }
+
+  .top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .middle, .bottom {
+    font-size: 1.2rem;
+    color: #777;
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+
+
+    > div {
+      padding: 0.5rem;
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      border-radius: 7px;
+
+      &:hover {
+        color: #444;
+        cursor: pointer;
+        background-color: #fafafa;
+      }
+    }
+  }
+
+  .bottom {
+    > div {
+      &:hover {
+        color: #444;
+        cursor: pointer;
+        background-color: #fcf1f1;
+        color: #ff4747;
+      }
+    }
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
 }
