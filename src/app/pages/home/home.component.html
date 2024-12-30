@@ -1,0 +1,26 @@
+<div class="home-container">
+  <p-table
+    [value]="customers"
+    [paginator]="true"
+    [scrollable]="true"
+    [rows]="5"
+    [tableStyle]="{ 'min-width': '50rem' }"
+    [rowsPerPageOptions]="[5, 10, 20]"
+    scrollHeight="400px"
+  >
+    <ng-template #header>
+      <tr>
+        <th style="width: 25%">Requisição de pagamento</th>
+        <th style="width: 25%">Assunto</th>
+        <th style="width: 25%">Vara</th>
+      </tr>
+    </ng-template>
+    <ng-template #body let-processo>
+      <tr>
+        <td>{{ processo.numero }}</td>
+        <td>{{ processo.assunto }}</td>
+        <td>{{ processo.vara }}</td>
+      </tr>
+    </ng-template>
+  </p-table>
+</div>

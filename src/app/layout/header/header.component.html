@@ -15,10 +15,74 @@
   </div>
   <div>
     <div>
-      <p-chip label="Administrador"></p-chip>
-    </div>
-    <div>
-      <p-menubar [model]="items" />
+      <p-avatar
+        icon="pi pi-user"
+        class="avatar"
+        size="large"
+        shape="circle"
+        (click)="onToggleClass()"
+        [style]="{ cursor: 'pointer' }"
+      />
     </div>
   </div>
 </div>
+<div class="overlay" *ngIf="isMenuOpen" @fadeInOut (@fadeInOut.done)="onFadeInDone()">
+</div>
+  <div class="user-sidemenu" *ngIf="isMenuOpen" @slideInOut>
+    <div class="fechar">
+      <i class="pi pi-times" (click)="onToggleClass()"></i>
+    </div>
+    <div class="top">
+      <div>
+        <p-avatar
+          icon="pi pi-user"
+          class="avatar"
+          size="large"
+          shape="circle"
+          [style]="{ cursor: 'pointer' }"
+        />
+      </div>
+      <div>
+        <span>Bruno Carneiro</span>
+      </div>
+      <div class="profile">
+        <span>Administrador</span>
+      </div>
+    </div>
+    <div class="middle">
+      <div>
+        <div>
+          <i class="pi pi-bell"></i>
+        </div>
+        <div>
+          <span>Notificações</span>
+        </div>
+      </div>
+      <div>
+        <div>
+          <i class="pi pi-wrench"></i>
+        </div>
+        <div>
+          <span>Preferências</span>
+        </div>
+      </div>
+      <div>
+        <div>
+          <i class="pi pi-question-circle"></i>
+        </div>
+        <div>
+          <span>Manuais</span>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      <div>
+        <div>
+          <i class="pi pi-sign-out"></i>
+        </div>
+        <div>
+          <span>Sair</span>
+        </div>
+      </div>
+    </div>
+  </div>
