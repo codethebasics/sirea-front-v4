@@ -7,6 +7,7 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { providePrimeNG } from 'primeng/config';
 import Aura from '@primeng/themes/aura';
 import { definePreset } from '@primeng/themes';
+import { provideHttpClient } from '@angular/common/http';
 
 const MyPreset = definePreset(Aura, {
   semantic: {
@@ -32,6 +33,7 @@ export const appConfig: ApplicationConfig = {
       eventCoalescing: true,
     }),
     provideRouter(routes),
+    provideHttpClient(),
     provideClientHydration(),
     provideAnimationsAsync(),
     providePrimeNG({
