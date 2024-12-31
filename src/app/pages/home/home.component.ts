@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import { TableModule } from 'primeng/table';
 
-type RequisicaoPagamento = {
+interface RequisicaoPagamento {
   id: number,
   numero: string,
   assunto: string,
@@ -14,12 +14,11 @@ type RequisicaoPagamento = {
     TableModule,
   ],
   templateUrl: './home.component.html',
+  standalone: true,
   styleUrl: './home.component.scss'
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
   customers!: RequisicaoPagamento[];
-
-  constructor() {}
 
   ngOnInit() {
     this.customers = [

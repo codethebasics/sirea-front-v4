@@ -19,7 +19,7 @@ export class BreadcrumbService {
     });
   }
 
-  private updateBreadcrumb(route: ActivatedRoute, url: string = '', breadcrumbs: MenuItem[] = []): void {
+  private updateBreadcrumb(route: ActivatedRoute, url = '', breadcrumbs: MenuItem[] = []): void {
     const children: ActivatedRoute[] = route.children;
 
     // Se a rota tiver filhos, percorre para obter os breadcrumbs

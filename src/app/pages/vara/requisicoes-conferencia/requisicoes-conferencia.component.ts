@@ -4,6 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-requisicoes-conferencia',
   imports: [],
   templateUrl: './requisicoes-conferencia.component.html',
+  standalone: true,
   styleUrl: './requisicoes-conferencia.component.scss'
 })
 export class RequisicoesConferenciaComponent {

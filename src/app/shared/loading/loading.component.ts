@@ -7,10 +7,11 @@ import { Component, signal, Signal } from '@angular/core';
   selector: 'app-loading',
   imports: [NgIf, ProgressBar],
   templateUrl: './loading.component.html',
+  standalone: true,
   styleUrl: './loading.component.scss'
 })
 export class LoadingComponent {
-  loading: Signal<boolean> = signal(false);
+  loading: Signal<boolean> = signal(true);
 
   setLoading(value: boolean) {
     this.loading.apply(value);  // Alterar o estado do Signal para true ou false

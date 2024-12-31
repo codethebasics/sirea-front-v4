@@ -4,6 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-requisicoes-pendentes',
   imports: [],
   templateUrl: './requisicoes-pendentes.component.html',
+  standalone: true,
   styleUrl: './requisicoes-pendentes.component.scss'
 })
 export class RequisicoesPendentesComponent {

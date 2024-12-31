@@ -10,7 +10,7 @@
     "test": "ng test",
     "serve:ssr:sirea-front": "node dist/sirea-front/server/server.mjs",
     "electron": "ng build && electron .",
-    "lint": "ng lint",
+    "lint": "ng lint --fix",
     "format": "prettier --write \"src/**/*.{ts,html,scss,css}\""
   },
   "private": true,

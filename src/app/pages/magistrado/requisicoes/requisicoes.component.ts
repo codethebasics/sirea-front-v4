@@ -4,6 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-requisicoes',
   imports: [],
   templateUrl: './requisicoes.component.html',
+  standalone: true,
   styleUrl: './requisicoes.component.scss'
 })
 export class RequisicoesComponent {

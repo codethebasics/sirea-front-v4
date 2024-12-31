@@ -1,4 +1,4 @@
-import { Component, effect, OnInit } from '@angular/core';
+import { Component, effect } from '@angular/core';
 import { BreadcrumbService } from './breadcrumbs.service';
 import { MenuItem } from 'primeng/api';
 import { Breadcrumb } from 'primeng/breadcrumb';
@@ -8,8 +8,9 @@ import { Breadcrumb } from 'primeng/breadcrumb';
   templateUrl: './breadcrumbs.component.html',
   styleUrls: ['./breadcrumbs.component.scss'],
   imports: [Breadcrumb],
+  standalone: true
 })
-export class BreadcrumbsComponent implements OnInit {
+export class BreadcrumbsComponent  {
   items: MenuItem[] = [];
   home: MenuItem = { icon: 'pi pi-home', routerLink: '/' };
 
@@ -19,5 +20,4 @@ export class BreadcrumbsComponent implements OnInit {
     });
   }
 
-  ngOnInit() {}
 }

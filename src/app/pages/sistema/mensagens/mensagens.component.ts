@@ -4,6 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-mensagens',
   imports: [],
   templateUrl: './mensagens.component.html',
+  standalone: true,
   styleUrl: './mensagens.component.scss'
 })
 export class MensagensComponent {

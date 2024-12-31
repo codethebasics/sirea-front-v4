@@ -4,6 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-parametros',
   imports: [],
   templateUrl: './parametros.component.html',
+  standalone: true,
   styleUrl: './parametros.component.scss'
 })
 export class ParametrosComponent {
