@@ -4,6 +4,7 @@ import { AvatarModule } from 'primeng/avatar';
 import { BadgeModule } from 'primeng/badge';
 import { InputTextModule } from 'primeng/inputtext';
 import { animate, style, transition, trigger } from '@angular/animations';
+import {RouterLink} from "@angular/router";
 
 @Component({
   selector: 'app-header',
@@ -12,7 +13,8 @@ import { animate, style, transition, trigger } from '@angular/animations';
     BadgeModule,
     AvatarModule,
     InputTextModule,
-    CommonModule
+    CommonModule,
+    RouterLink
   ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',

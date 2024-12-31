@@ -18,6 +18,9 @@ import { RequisicoesMigradasComponent } from './pages/magistrado/requisicoes-mig
 import { MetricasSistemaComponent } from './pages/dashboard/metricas-sistema/metricas-sistema.component';
 import { MetricasProcessosComponent } from './pages/dashboard/metricas-processos/metricas-processos.component';
 import { RequisicoesConferenciaComponent } from './pages/vara/requisicoes-conferencia/requisicoes-conferencia.component';
+import {NotificacoesComponent} from "./pages/configuracoes/notificacoes/notificacoes.component";
+import {PreferenciasComponent} from "./pages/configuracoes/preferencias/preferencias.component";
+import {ManuaisComponent} from "./pages/configuracoes/manuais/manuais.component";
 
 export const routes: Routes = [
   { path: 'home', component: HomeComponent, title: 'Início' },
@@ -215,6 +218,40 @@ export const routes: Routes = [
         data: {
           breadcrumb: 'Saúde do sistema',
           icon: 'pi pi-server'
+        },
+      },
+    ],
+  },
+  {
+    title: 'Configurações',
+    path: 'configuracoes',
+    data: {
+      breadcrumb: 'Configurações',
+      icon: 'pi pi-cog'
+    },
+    children: [
+      {
+        path: 'notificacoes',
+        component: NotificacoesComponent,
+        data: {
+          breadcrumb: 'Notificações',
+          icon: 'pi pi-bell'
+        },
+      },
+      {
+        path: 'preferencias',
+        component: PreferenciasComponent,
+        data: {
+          breadcrumb: 'Preferências',
+          icon: 'pi pi pi-wrench'
+        },
+      },
+      {
+        path: 'manuais',
+        component: ManuaisComponent,
+        data: {
+          breadcrumb: 'Manuais',
+          icon: 'pi pi-question-circle'
         },
       },
     ],
