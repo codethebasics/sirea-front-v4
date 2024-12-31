@@ -23,19 +23,8 @@ import { HttpClient } from '@angular/common/http';
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
+  standalone: true
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
   title = 'sirea-front';
-
-  constructor(private http: HttpClient) {
-  }
-
-  ngOnInit(): void {
-    this.http.get('http://localhost:4000/test')
-      .subscribe({
-        next: data => console.log(data),
-        error: error => console.log(error),
-      })
-  }
-
 }

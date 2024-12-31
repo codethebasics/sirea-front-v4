@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
   imports: [Menu],
   templateUrl: './sidebar.component.html',
   styleUrl: './sidebar.component.scss',
+  standalone: true
 })
 export class SidebarComponent implements OnInit {
   items: MenuItem[] | undefined;
