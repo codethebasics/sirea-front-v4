@@ -18,9 +18,9 @@ import { RequisicoesMigradasComponent } from './pages/magistrado/requisicoes-mig
 import { MetricasSistemaComponent } from './pages/dashboard/metricas-sistema/metricas-sistema.component';
 import { MetricasProcessosComponent } from './pages/dashboard/metricas-processos/metricas-processos.component';
 import { RequisicoesConferenciaComponent } from './pages/vara/requisicoes-conferencia/requisicoes-conferencia.component';
-import {NotificacoesComponent} from "./pages/configuracoes/notificacoes/notificacoes.component";
-import {PreferenciasComponent} from "./pages/configuracoes/preferencias/preferencias.component";
-import {ManuaisComponent} from "./pages/configuracoes/manuais/manuais.component";
+import { NotificacoesComponent } from './pages/configuracoes/notificacoes/notificacoes.component';
+import { PreferenciasComponent } from './pages/configuracoes/preferencias/preferencias.component';
+import { ManuaisComponent } from './pages/configuracoes/manuais/manuais.component';
 
 export const routes: Routes = [
   { path: 'home', component: HomeComponent, title: 'Início' },
@@ -36,7 +36,7 @@ export const routes: Routes = [
         component: MeusProcessosComponent,
         data: {
           breadcrumb: 'Meus processos',
-          icon: 'pi pi-briefcase'
+          icon: 'pi pi-briefcase',
         },
       },
       {
@@ -44,7 +44,7 @@ export const routes: Routes = [
         component: ImportarProcessoComponent,
         data: {
           breadcrumb: 'Importar',
-          icon: 'pi pi-download'
+          icon: 'pi pi-download',
         },
       },
     ],
@@ -61,7 +61,7 @@ export const routes: Routes = [
         component: UsuariosComponent,
         data: {
           breadcrumb: 'Usuários',
-          icon: 'pi pi-user'
+          icon: 'pi pi-user',
         },
       },
       {
@@ -69,7 +69,7 @@ export const routes: Routes = [
         component: PerfisComponent,
         data: {
           breadcrumb: 'Perfis',
-          icon: 'pi pi-users'
+          icon: 'pi pi-users',
         },
       },
       {
@@ -77,7 +77,7 @@ export const routes: Routes = [
         component: ParametrosComponent,
         data: {
           breadcrumb: 'Parâmetros',
-          icon: 'pi pi-briefcase'
+          icon: 'pi pi-briefcase',
         },
       },
       {
@@ -85,7 +85,7 @@ export const routes: Routes = [
         component: MensagensComponent,
         data: {
           breadcrumb: 'Mensagens',
-          icon: 'pi pi-bell'
+          icon: 'pi pi-bell',
         },
       },
       {
@@ -93,7 +93,7 @@ export const routes: Routes = [
         component: RelatoriosComponent,
         data: {
           breadcrumb: 'Relatórios',
-          icon: 'pi pi-book'
+          icon: 'pi pi-book',
         },
       },
       {
@@ -101,7 +101,7 @@ export const routes: Routes = [
         component: SuporteComponent,
         data: {
           breadcrumb: 'Suporte',
-          icon: 'pi pi-question-circle'
+          icon: 'pi pi-question-circle',
         },
       },
     ],
@@ -118,7 +118,7 @@ export const routes: Routes = [
         component: RequisicoesAssinadasComponent,
         data: {
           breadcrumb: 'Requisições assinadas',
-          icon: 'pi pi-pencil'
+          icon: 'pi pi-pencil',
         },
       },
       {
@@ -126,7 +126,7 @@ export const routes: Routes = [
         component: RequisicoesPendentesComponent,
         data: {
           breadcrumb: 'Requisições pendentes',
-          icon: 'pi pi-hourglass'
+          icon: 'pi pi-hourglass',
         },
       },
       {
@@ -134,7 +134,7 @@ export const routes: Routes = [
         component: RequisicoesMigradasComponent,
         data: {
           breadcrumb: 'Requisições migradas',
-          icon: 'pi pi-upload'
+          icon: 'pi pi-upload',
         },
       },
     ],
@@ -151,7 +151,7 @@ export const routes: Routes = [
         component: RequisicoesConferenciaComponent,
         data: {
           breadcrumb: 'Tela de conferência',
-          icon: 'pi pi-eye'
+          icon: 'pi pi-eye',
         },
       },
     ],
@@ -168,7 +168,7 @@ export const routes: Routes = [
         component: MetricasSistemaComponent,
         data: {
           breadcrumb: 'Métricas do sistema',
-          icon: 'pi pi-chart-bar'
+          icon: 'pi pi-chart-bar',
         },
       },
       {
@@ -176,7 +176,7 @@ export const routes: Routes = [
         component: MetricasProcessosComponent,
         data: {
           breadcrumb: 'Métricas dos processos',
-          icon: 'pi pi-chart-line'
+          icon: 'pi pi-chart-line',
         },
       },
     ],
@@ -193,7 +193,7 @@ export const routes: Routes = [
         component: CadastroAssuntoComponent,
         data: {
           breadcrumb: 'Cadastro de assunto',
-          icon: 'pi pi-comment'
+          icon: 'pi pi-comment',
         },
       },
       {
@@ -201,7 +201,7 @@ export const routes: Routes = [
         component: CadastroSecaoSubsecaoComponent,
         data: {
           breadcrumb: 'Cadastro de seção/subseção',
-          icon: 'pi pi pi-sitemap'
+          icon: 'pi pi pi-sitemap',
         },
       },
       {
@@ -209,7 +209,7 @@ export const routes: Routes = [
         component: CadastroVaraComponent,
         data: {
           breadcrumb: 'Cadastro de vara',
-          icon: 'pi pi-building-columns'
+          icon: 'pi pi-building-columns',
         },
       },
       {
@@ -217,7 +217,7 @@ export const routes: Routes = [
         component: SaudeSistemaComponent,
         data: {
           breadcrumb: 'Saúde do sistema',
-          icon: 'pi pi-server'
+          icon: 'pi pi-server',
         },
       },
     ],
@@ -227,7 +227,7 @@ export const routes: Routes = [
     path: 'configuracoes',
     data: {
       breadcrumb: 'Configurações',
-      icon: 'pi pi-cog'
+      icon: 'pi pi-cog',
     },
     children: [
       {
@@ -235,7 +235,7 @@ export const routes: Routes = [
         component: NotificacoesComponent,
         data: {
           breadcrumb: 'Notificações',
-          icon: 'pi pi-bell'
+          icon: 'pi pi-bell',
         },
       },
       {
@@ -243,7 +243,7 @@ export const routes: Routes = [
         component: PreferenciasComponent,
         data: {
           breadcrumb: 'Preferências',
-          icon: 'pi pi pi-wrench'
+          icon: 'pi pi pi-wrench',
         },
       },
       {
@@ -251,7 +251,7 @@ export const routes: Routes = [
         component: ManuaisComponent,
         data: {
           breadcrumb: 'Manuais',
-          icon: 'pi pi-question-circle'
+          icon: 'pi pi-question-circle',
         },
       },
     ],

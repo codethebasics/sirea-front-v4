@@ -5,8 +5,6 @@ import { Component } from '@angular/core';
   imports: [],
   templateUrl: './requisicoes-migradas.component.html',
   standalone: true,
-  styleUrl: './requisicoes-migradas.component.scss'
+  styleUrl: './requisicoes-migradas.component.scss',
 })
-export class RequisicoesMigradasComponent {
-
-}
+export class RequisicoesMigradasComponent {}

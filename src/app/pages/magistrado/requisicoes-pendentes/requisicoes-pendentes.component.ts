@@ -5,8 +5,6 @@ import { Component } from '@angular/core';
   imports: [],
   templateUrl: './requisicoes-pendentes.component.html',
   standalone: true,
-  styleUrl: './requisicoes-pendentes.component.scss'
+  styleUrl: './requisicoes-pendentes.component.scss',
 })
-export class RequisicoesPendentesComponent {
-
-}
+export class RequisicoesPendentesComponent {}

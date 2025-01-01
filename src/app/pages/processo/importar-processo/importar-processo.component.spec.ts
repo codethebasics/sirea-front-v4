@@ -8,9 +8,8 @@ describe('ImportarProcessoComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ImportarProcessoComponent]
-    })
-    .compileComponents();
+      imports: [ImportarProcessoComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(ImportarProcessoComponent);
     component = fixture.componentInstance;

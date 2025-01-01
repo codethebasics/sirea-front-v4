@@ -1,1 +1,35 @@
-<p>notificacoes works!</p>
+<div class="notificacoes-container" *ngFor="let notificacao of tabs">
+  <p-accordion value="-1">
+    <p-accordion-panel
+      [value]="notificacao.value"
+      (click)="notificacao.viewed = true"
+    >
+      <p-accordion-header>
+        <ng-template #toggleicon let-active="active">
+          @if (active) {
+            <i class="pi pi-eye-slash"></i>
+          } @else {
+            <i class="pi pi-eye"></i>
+          }
+        </ng-template>
+        <div class="notificacoes-container__summary">
+          <div>
+            <i [class]="notificacao.icon"></i>
+            <span>{{ notificacao?.summary }}</span>
+          </div>
+          <div>
+            <p-badge value="visualizado" *ngIf="notificacao.viewed"></p-badge>
+            <span>{{ notificacao.date }}</span>
+          </div>
+        </div>
+      </p-accordion-header>
+      <p-accordion-content>
+        <div [style]="{ padding: '0.5rem' }">
+          <p-message [severity]="notificacao.severity">
+            {{ notificacao.description }}
+          </p-message>
+        </div>
+      </p-accordion-content>
+    </p-accordion-panel>
+  </p-accordion>
+</div>

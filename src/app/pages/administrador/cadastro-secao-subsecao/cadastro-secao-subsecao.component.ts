@@ -5,8 +5,6 @@ import { Component } from '@angular/core';
   imports: [],
   templateUrl: './cadastro-secao-subsecao.component.html',
   standalone: true,
-  styleUrl: './cadastro-secao-subsecao.component.scss'
+  styleUrl: './cadastro-secao-subsecao.component.scss',
 })
-export class CadastroSecaoSubsecaoComponent {
-
-}
+export class CadastroSecaoSubsecaoComponent {}

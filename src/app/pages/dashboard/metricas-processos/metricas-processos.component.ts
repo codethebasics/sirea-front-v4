@@ -4,8 +4,6 @@ import { Component } from '@angular/core';
   selector: 'app-metricas-processos',
   imports: [],
   templateUrl: './metricas-processos.component.html',
-  styleUrl: './metricas-processos.component.scss'
+  styleUrl: './metricas-processos.component.scss',
 })
-export class MetricasProcessosComponent {
-
-}
+export class MetricasProcessosComponent {}

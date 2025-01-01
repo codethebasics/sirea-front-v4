@@ -5,8 +5,6 @@ import { Component } from '@angular/core';
   imports: [],
   templateUrl: './cadastro-assunto.component.html',
   standalone: true,
-  styleUrl: './cadastro-assunto.component.scss'
+  styleUrl: './cadastro-assunto.component.scss',
 })
-export class CadastroAssuntoComponent {
-
-}
+export class CadastroAssuntoComponent {}

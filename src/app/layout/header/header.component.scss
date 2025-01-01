@@ -81,13 +81,13 @@ img[src='logo-sirea.svg'] {
     font-size: 1.2rem;
   }
 
-  .middle, .bottom {
+  .middle,
+  .bottom {
     font-size: 1.2rem;
     color: #777;
     display: flex;
     gap: 0.5rem;
     flex-direction: column;
-
 
     > div {
       padding: 0.5rem;

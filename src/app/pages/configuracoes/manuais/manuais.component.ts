@@ -4,8 +4,6 @@ import { Component } from '@angular/core';
   selector: 'app-manuais',
   imports: [],
   templateUrl: './manuais.component.html',
-  styleUrl: './manuais.component.scss'
+  styleUrl: './manuais.component.scss',
 })
-export class ManuaisComponent {
-
-}
+export class ManuaisComponent {}

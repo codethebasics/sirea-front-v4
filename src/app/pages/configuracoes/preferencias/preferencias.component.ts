@@ -4,8 +4,6 @@ import { Component } from '@angular/core';
   selector: 'app-preferencias',
   imports: [],
   templateUrl: './preferencias.component.html',
-  styleUrl: './preferencias.component.scss'
+  styleUrl: './preferencias.component.scss',
 })
-export class PreferenciasComponent {
-
-}
+export class PreferenciasComponent {}

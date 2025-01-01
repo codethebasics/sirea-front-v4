@@ -5,8 +5,6 @@ import { Component } from '@angular/core';
   imports: [],
   templateUrl: './perfis.component.html',
   standalone: true,
-  styleUrl: './perfis.component.scss'
+  styleUrl: './perfis.component.scss',
 })
-export class PerfisComponent {
-
-}
+export class PerfisComponent {}

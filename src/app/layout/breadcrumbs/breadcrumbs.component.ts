@@ -8,9 +8,9 @@ import { Breadcrumb } from 'primeng/breadcrumb';
   templateUrl: './breadcrumbs.component.html',
   styleUrls: ['./breadcrumbs.component.scss'],
   imports: [Breadcrumb],
-  standalone: true
+  standalone: true,
 })
-export class BreadcrumbsComponent  {
+export class BreadcrumbsComponent {
   items: MenuItem[] = [];
   home: MenuItem = { icon: 'pi pi-home', routerLink: '/' };
 
@@ -19,5 +19,4 @@ export class BreadcrumbsComponent  {
       this.items = this.breadcrumbService.breadcrumb();
     });
   }
-
 }

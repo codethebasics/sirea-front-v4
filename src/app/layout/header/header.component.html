@@ -26,63 +26,73 @@
     </div>
   </div>
 </div>
-<div class="overlay" *ngIf="isMenuOpen" @fadeInOut (@fadeInOut.done)="onFadeInDone()">
-</div>
-  <div class="user-sidemenu" *ngIf="isMenuOpen" @slideInOut>
-    <div class="fechar">
-      <i class="pi pi-times" (click)="onToggleClass()"></i>
+<div
+  class="overlay"
+  *ngIf="isMenuOpen"
+  @fadeInOut
+  (@fadeInOut.done)="onFadeInDone()"
+></div>
+<div class="user-sidemenu" *ngIf="isMenuOpen" @slideInOut>
+  <div class="fechar">
+    <i class="pi pi-times" (click)="onToggleClass()"></i>
+  </div>
+  <div class="top">
+    <div>
+      <p-avatar
+        icon="pi pi-user"
+        class="avatar"
+        size="large"
+        shape="circle"
+        [style]="{ cursor: 'pointer' }"
+      />
     </div>
-    <div class="top">
-      <div>
-        <p-avatar
-          icon="pi pi-user"
-          class="avatar"
-          size="large"
-          shape="circle"
-          [style]="{ cursor: 'pointer' }"
-        />
-      </div>
-      <div>
-        <span>Bruno Carneiro</span>
-      </div>
-      <div class="profile">
-        <span>Administrador</span>
-      </div>
+    <div>
+      <span>Bruno Carneiro</span>
     </div>
-    <div class="middle">
+    <div class="profile">
+      <span>Administrador</span>
+    </div>
+  </div>
+  <div class="middle">
+    <div>
       <div>
-        <div>
-          <i class="pi pi-bell"></i>
-        </div>
-        <div>
-          <a routerLink="/configuracoes/notificacoes" (click)="onToggleClass()">Notificações</a>
-        </div>
+        <i class="pi pi-bell"></i>
       </div>
       <div>
-        <div>
-          <i class="pi pi-wrench"></i>
-        </div>
-        <div>
-          <a routerLink="/configuracoes/preferencias" (click)="onToggleClass()">Preferências</a>
-        </div>
-      </div>
-      <div>
-        <div>
-          <i class="pi pi-question-circle"></i>
-        </div>
-        <div>
-          <a routerLink="/configuracoes/manuais" (click)="onToggleClass()">Manuais</a>
-        </div>
+        <a routerLink="/configuracoes/notificacoes" (click)="onToggleClass()"
+          >Notificações</a
+        >
       </div>
     </div>
-    <div class="bottom">
+    <div>
       <div>
-        <div>
-          <i class="pi pi-sign-out"></i>
-        </div>
-        <div>
-          <span>Sair</span>
-        </div>
+        <i class="pi pi-wrench"></i>
+      </div>
+      <div>
+        <a routerLink="/configuracoes/preferencias" (click)="onToggleClass()"
+          >Preferências</a
+        >
+      </div>
+    </div>
+    <div>
+      <div>
+        <i class="pi pi-question-circle"></i>
+      </div>
+      <div>
+        <a routerLink="/configuracoes/manuais" (click)="onToggleClass()"
+          >Manuais</a
+        >
       </div>
     </div>
   </div>
+  <div class="bottom">
+    <div>
+      <div>
+        <i class="pi pi-sign-out"></i>
+      </div>
+      <div>
+        <span>Sair</span>
+      </div>
+    </div>
+  </div>
+</div>

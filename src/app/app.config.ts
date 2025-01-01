@@ -1,21 +1,21 @@
-import {ApplicationConfig, provideZoneChangeDetection} from '@angular/core';
-import {provideRouter} from '@angular/router';
+import { ApplicationConfig, provideZoneChangeDetection } from '@angular/core';
+import { provideRouter } from '@angular/router';
 
-import {routes} from './app.routes';
-import {provideClientHydration} from '@angular/platform-browser';
-import {provideAnimationsAsync} from '@angular/platform-browser/animations/async';
-import {providePrimeNG} from 'primeng/config';
+import { routes } from './app.routes';
+import { provideClientHydration } from '@angular/platform-browser';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { providePrimeNG } from 'primeng/config';
 import Aura from '@primeng/themes/aura';
-import {definePreset} from '@primeng/themes';
+import { definePreset } from '@primeng/themes';
 import {
   provideHttpClient,
   withFetch,
   withInterceptors,
 } from '@angular/common/http';
 
-import {LoadingService} from "./shared/loading/loading.service";
-import {LoadingComponent} from "./shared/loading/loading.component";
-import {loadingInterceptor} from "./interceptors/loading-interceptor";
+import { LoadingService } from './shared/loading/loading.service';
+import { LoadingComponent } from './shared/loading/loading.component';
+import { loadingInterceptor } from './interceptors/loading-interceptor';
 
 const MyPreset = definePreset(Aura, {
   semantic: {
@@ -41,10 +41,7 @@ export const appConfig: ApplicationConfig = {
       eventCoalescing: true,
     }),
     provideRouter(routes),
-    provideHttpClient(
-      withInterceptors([loadingInterceptor]),
-      withFetch()
-    ),
+    provideHttpClient(withInterceptors([loadingInterceptor]), withFetch()),
     provideClientHydration(),
     provideAnimationsAsync(),
     providePrimeNG({
@@ -56,6 +53,6 @@ export const appConfig: ApplicationConfig = {
       },
     }),
     LoadingService,
-    LoadingComponent
+    LoadingComponent,
   ],
 };

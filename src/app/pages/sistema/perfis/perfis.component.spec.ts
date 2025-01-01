@@ -8,9 +8,8 @@ describe('PerfisComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [PerfisComponent]
-    })
-    .compileComponents();
+      imports: [PerfisComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(PerfisComponent);
     component = fixture.componentInstance;

@@ -1,15 +1,14 @@
-
 import { ProgressBar } from 'primeng/progressbar';
 import { NgIf } from '@angular/common';
-import {Component, OnInit, signal, Signal} from '@angular/core';
-import {LoadingService} from "./loading.service";
+import { Component, OnInit, signal, Signal } from '@angular/core';
+import { LoadingService } from './loading.service';
 
 @Component({
   selector: 'app-loading',
   imports: [NgIf, ProgressBar],
   templateUrl: './loading.component.html',
   standalone: true,
-  styleUrl: './loading.component.scss'
+  styleUrl: './loading.component.scss',
 })
 export class LoadingComponent implements OnInit {
   loading: boolean = false;
@@ -23,6 +22,6 @@ export class LoadingComponent implements OnInit {
   }
 
   setLoading(value: boolean) {
-    this.loading = value;  // Alterar o estado do Signal para true ou false
+    this.loading = value; // Alterar o estado do Signal para true ou false
   }
 }

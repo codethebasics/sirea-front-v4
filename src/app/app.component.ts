@@ -23,7 +23,7 @@ import { HttpClient } from '@angular/common/http';
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
-  standalone: true
+  standalone: true,
 })
 export class AppComponent {
   title = 'sirea-front';

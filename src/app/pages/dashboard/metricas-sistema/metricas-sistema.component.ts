@@ -4,8 +4,6 @@ import { Component } from '@angular/core';
   selector: 'app-metricas-sistema',
   imports: [],
   templateUrl: './metricas-sistema.component.html',
-  styleUrl: './metricas-sistema.component.scss'
+  styleUrl: './metricas-sistema.component.scss',
 })
-export class MetricasSistemaComponent {
-
-}
+export class MetricasSistemaComponent {}

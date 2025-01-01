@@ -8,14 +8,12 @@ import { Router } from '@angular/router';
   imports: [Menu],
   templateUrl: './sidebar.component.html',
   styleUrl: './sidebar.component.scss',
-  standalone: true
+  standalone: true,
 })
 export class SidebarComponent implements OnInit {
   items: MenuItem[] | undefined;
 
-  constructor(private router: Router) {
-
-  }
+  constructor(private router: Router) {}
 
   ngOnInit() {
     this.items = [
@@ -35,7 +33,7 @@ export class SidebarComponent implements OnInit {
         ],
       },
       {
-        separator: true
+        separator: true,
       },
       {
         label: 'Sistema',
@@ -74,7 +72,7 @@ export class SidebarComponent implements OnInit {
         ],
       },
       {
-        separator: true
+        separator: true,
       },
       {
         label: 'Magistrado',
@@ -82,22 +80,25 @@ export class SidebarComponent implements OnInit {
           {
             label: 'Requisições assinadas',
             icon: 'pi pi-pencil',
-            command: () => this.router.navigate(['/magistrado/requisicoes-assinadas']),
+            command: () =>
+              this.router.navigate(['/magistrado/requisicoes-assinadas']),
           },
           {
             label: 'Requisições pendentes',
             icon: 'pi pi-hourglass',
-            command: () => this.router.navigate(['/magistrado/requisicoes-pendentes']),
+            command: () =>
+              this.router.navigate(['/magistrado/requisicoes-pendentes']),
           },
           {
             label: 'Requisições migradas',
             icon: 'pi pi-upload',
-            command: () => this.router.navigate(['/magistrado/requisicoes-migradas']),
+            command: () =>
+              this.router.navigate(['/magistrado/requisicoes-migradas']),
           },
         ],
       },
       {
-        separator: true
+        separator: true,
       },
       {
         label: 'Vara',
@@ -105,12 +106,13 @@ export class SidebarComponent implements OnInit {
           {
             label: 'Tela de conferência',
             icon: 'pi pi-eye',
-            command: () => this.router.navigate(['/vara/requisicoes-conferencia']),
+            command: () =>
+              this.router.navigate(['/vara/requisicoes-conferencia']),
           },
         ],
       },
       {
-        separator: true
+        separator: true,
       },
       {
         label: 'Dashboard',
@@ -118,17 +120,19 @@ export class SidebarComponent implements OnInit {
           {
             label: 'Métricas do sistema',
             icon: 'pi pi-chart-bar',
-            command: () => this.router.navigate(['/dashboard/metricas-sistema']),
+            command: () =>
+              this.router.navigate(['/dashboard/metricas-sistema']),
           },
           {
             label: 'Métricas dos processos',
             icon: 'pi pi-chart-line',
-            command: () => this.router.navigate(['/dashboard/metricas-processos']),
+            command: () =>
+              this.router.navigate(['/dashboard/metricas-processos']),
           },
         ],
       },
       {
-        separator: true
+        separator: true,
       },
       {
         label: 'Administrador',
@@ -136,7 +140,8 @@ export class SidebarComponent implements OnInit {
           {
             label: 'Saúde do sistema',
             icon: 'pi pi-server',
-            command: () => this.router.navigate(['/administrador/saude-sistema']),
+            command: () =>
+              this.router.navigate(['/administrador/saude-sistema']),
           },
           {
             label: 'Cadastro de assunto',
@@ -151,7 +156,8 @@ export class SidebarComponent implements OnInit {
           {
             label: 'Cadastro de seção/subseção',
             icon: 'pi pi-sitemap',
-            command: () => this.router.navigate(['/administrador/secao-subsecao']),
+            command: () =>
+              this.router.navigate(['/administrador/secao-subsecao']),
           },
         ],
       },
