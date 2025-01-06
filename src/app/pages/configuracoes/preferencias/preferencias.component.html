@@ -4,77 +4,131 @@
     <span>Preferências</span>
   </div>
   <div class="page">
-    <p-card>
-      <div class="userdata">
-        <div class="userdata__avatar">
-          <div class="userdata__avatar__image">
-            <p-image
-              width="100"
-              src="https://avatar.iran.liara.run/public/24"
-            ></p-image>
+    <div class="page__left">
+      <p-card>
+        <div class="userdata">
+          <div class="userdata__avatar">
+            <div class="userdata__avatar__image">
+              <p-image
+                width="100"
+                height="100"
+                src="https://avatars.githubusercontent.com/u/80222865?v=4"
+              ></p-image>
+            </div>
+            <div class="userdata__avatar__name">
+              <span>Bruno de Souza Ferreira Carneiro</span>
+            </div>
+            <div class="userdata__avatar__profile">
+              <span>Administrador</span>
+            </div>
+            <div class="userdata__avatar__email">
+              <i class="pi pi-envelope"></i>
+              <span>bruno.ferreira&#64;trf1.com.br</span>
+            </div>
           </div>
-          <div class="userdata__avatar__name">
-            <span>Bruno de Souza Ferreira Carneiro</span>
-          </div>
-          <div class="userdata__avatar__profile">
-            <span>Administrador</span>
-          </div>
-          <div class="userdata__avatar__email">
-            <i class="pi pi-envelope"></i>
-            <span>bruno.ferreira&#64;trf1.com.br</span>
+          <div class="userdata__signup">
+            <div>
+              <span>Cadastrado em 02/02/2021 às 17:00</span>
+            </div>
+            <div>
+              <span>Última alteração em 02/01/2025 às 11:32</span>
+            </div>
           </div>
         </div>
-        <div class="userdata__signup">
-          <div>
-            <span>Cadastrado em 02/02/2021 às 17:00</span>
-          </div>
-          <div>
-            <span>Última alteração em 02/01/2025 às 11:32</span>
+      </p-card>
+    </div>
+    <div class="page__right">
+      <p-card header="Senha">
+        <div [style]="{ 'padding-top': '1rem' }">
+          <div class="form">
+            <div class="control">
+              <div>
+                <label for="input-new-password">Senha nova</label>
+              </div>
+              <div>
+                <input
+                  pInputText
+                  id="input-new-password"
+                  type="password"
+                  placeholder="******"
+                />
+              </div>
+            </div>
+            <div class="control">
+              <div>
+                <label for="input-confirm-new-password"
+                  >Confirme a senha nova</label
+                >
+              </div>
+              <div>
+                <input
+                  pInputText
+                  id="input-confirm-new-password"
+                  type="password"
+                  placeholder="******"
+                />
+              </div>
+            </div>
+            <div class="control">
+              <div>
+                <label for="input-password">Senha atual</label>
+              </div>
+              <div>
+                <input
+                  pInputText
+                  id="input-password"
+                  type="password"
+                  placeholder="*******"
+                />
+              </div>
+            </div>
+            <div class="control right">
+              <div>
+                <button pButton severity="secondary">
+                  <span pButtonLabel>Limpar</span>
+                  <TrashIcon pButtonIcon />
+                </button>
+              </div>
+              <div>
+                <button pButton severity="info">
+                  <span pButtonLabel>Salvar</span>
+                  <CheckIcon pButtonIcon />
+                </button>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <!--      <div class="form">-->
-      <!--        <div class="control">-->
-      <!--          <div>-->
-      <!--            <label for="input-senha">Senha</label>-->
-      <!--          </div>-->
-      <!--          <div>-->
-      <!--            <input-->
-      <!--              pInputText-->
-      <!--              id="input-senha"-->
-      <!--              type="password"-->
-      <!--              placeholder="*******"-->
-      <!--            />-->
-      <!--          </div>-->
-      <!--        </div>-->
-      <!--        <div class="control">-->
-      <!--          <div>-->
-      <!--            <label for="input-confirm-password">Confirme a senha</label>-->
-      <!--          </div>-->
-      <!--          <div>-->
-      <!--            <input-->
-      <!--              pInputText-->
-      <!--              id="input-confirm-password"-->
-      <!--              type="password"-->
-      <!--              placeholder="******"-->
-      <!--            />-->
-      <!--          </div>-->
-      <!--        </div>-->
-      <!--        <div class="control right">-->
-      <!--          <div>-->
-      <!--            <button pButton severity="secondary">-->
-      <!--              <span pButtonLabel>Limpar</span>-->
-      <!--              <TrashIcon pButtonIcon />-->
-      <!--            </button>-->
-      <!--          </div>-->
-      <!--          <div>-->
-      <!--            <button pButton severity="info">-->
-      <!--              <span pButtonLabel>Salvar</span>-->
-      <!--              <CheckIcon pButtonIcon />-->
-      <!--            </button>-->
-      <!--          </div>-->
-      <!--        </div>-->
-      <!--      </div>-->
-    </p-card>
+      </p-card>
+      <p-card header="Perfil">
+        <div [style]="{ 'padding-top': '1rem' }">
+          <div class="form">
+            <div class="control">
+              <div [style]="{'overflow-y': 'auto', 'max-height': '210px'}">
+                <p-tree
+                  id="select-profile"
+                  [value]="groupedProfiles"
+                  selectionMode="checkbox"
+                  [(selection)]="selectedProfile"
+                />
+              </div>
+            </div>
+            <div class="control right">
+              <div>
+                <button pButton severity="secondary">
+                  <span pButtonLabel>Resetar</span>
+                  <UndoIcon pButtonIcon />
+                </button>
+              </div>
+              <div>
+                <button pButton severity="info">
+                  <span pButtonLabel>Salvar</span>
+                  <CheckIcon pButtonIcon />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </p-card>
+    </div>
   </div>
 </div>
