@@ -1,6 +1,6 @@
 import { ProgressBar } from 'primeng/progressbar';
 import { NgIf } from '@angular/common';
-import { Component, OnInit, signal, Signal } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { LoadingService } from './loading.service';
 
 @Component({
@@ -11,7 +11,7 @@ import { LoadingService } from './loading.service';
   styleUrl: './loading.component.scss',
 })
 export class LoadingComponent implements OnInit {
-  loading: boolean = false;
+  loading = false;
 
   constructor(private loadingService: LoadingService) {}
 

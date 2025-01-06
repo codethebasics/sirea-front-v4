@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { ButtonModule } from 'primeng/button';
 import { DatePickerModule } from 'primeng/datepicker';
@@ -7,7 +7,6 @@ import { HeaderComponent } from './layout/header/header.component';
 import { BreadcrumbsComponent } from './layout/breadcrumbs/breadcrumbs.component';
 import { SidebarComponent } from './layout/sidebar/sidebar.component';
 import { LoadingComponent } from './shared/loading/loading.component';
-import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
